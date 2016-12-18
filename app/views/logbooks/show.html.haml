@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Boat name:
+  = @logbook.boat_name
+%p
+  %b Start no:
+  = @logbook.start_no
+
+= link_to 'Edit', edit_logbook_path(@logbook)
+\|
+= link_to 'Back', logbooks_path
