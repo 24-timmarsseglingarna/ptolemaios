@@ -3,8 +3,11 @@
 %table
   %thead
     %tr
+      %th Logbook id (internal)
       %th Boat name
       %th Start no
+      %th Created at
+      %th Updated at
       %th
       %th
       %th
@@ -12,8 +15,11 @@
   %tbody
     - @logbooks.each do |logbook|
       %tr
+        %td= logbook.id
         %td= logbook.boat_name
         %td= logbook.start_no
+        %td= logbook.created_at
+        %td= logbook.updated_at
         %td= link_to 'Show', logbook
         %td= link_to 'Edit', edit_logbook_path(logbook)
         %td= link_to 'Destroy', logbook, :method => :delete, :data => { :confirm => 'Are you sure?' }

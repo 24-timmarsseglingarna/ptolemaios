@@ -1,11 +1,20 @@
 %p#notice= notice
 
 %p
+  %b Loggbook id (internal):
+  = @logbook.id
+%p
   %b Boat name:
   = @logbook.boat_name
 %p
   %b Start no:
   = @logbook.start_no
+%p
+  %b Created at:
+  = @logbook.created_at
+%p
+  %b Updated at:
+  = @logbook.updated_at
 
 = link_to 'Edit', edit_logbook_path(@logbook)
 \|
