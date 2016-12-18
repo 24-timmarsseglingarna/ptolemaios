@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+ruby '2.3.1'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -46,3 +48,16 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'rails-i18n'
+gem 'haml'
+gem 'haml-rails'
+#gem 'formtastic-bootstrap'
+#gem 'country_select'
+#gem 'bootstrap_sb_admin_base_v2'
+#gem 'jquery-datatables-rails', '~> 3.4.0'
+#gem 'acts_as_paranoid'
+#gem 'devise'
+#gem 'pundit'
+#gem 'momentjs-rails', '>= 2.9.0'
+#gem 'bootstrap3-datetimepicker-rails', '~> 4.17.43'
