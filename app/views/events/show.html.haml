@@ -2,7 +2,7 @@
 
 %p
   %b Logbook:
-  = @event.logbook.name
+  = link_to @event.logbook.name, @event.logbook
 %p
   %b Time:
   = @event.time
