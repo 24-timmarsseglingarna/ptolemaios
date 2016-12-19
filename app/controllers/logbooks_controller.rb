@@ -10,6 +10,7 @@ class LogbooksController < ApplicationController
   # GET /logbooks/1
   # GET /logbooks/1.json
   def show
+    @events = @logbook.events
   end
 
   # GET /logbooks/new

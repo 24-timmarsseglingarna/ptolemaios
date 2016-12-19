@@ -1,22 +1,4 @@
-%p#notice= notice
-
-%p
-  %b Loggbook id (internal):
-  = @logbook.id
-%p
-  %b Boat name:
-  = @logbook.boat_name
-%p
-  %b Start no:
-  = @logbook.start_no
-%p
-  %b Created at:
-  = @logbook.created_at
-%p
-  %b Updated at:
-  = @logbook.updated_at
-
-
+%h1 Listing events  
 
 %table
   %thead
@@ -51,12 +33,6 @@
         %td= link_to 'Show', event
         %td= link_to 'Edit', edit_event_path(event)
         %td= link_to 'Destroy', event, :method => :delete, :data => { :confirm => 'Are you sure?' }
+%br
 
-
-%p= link_to('add logbook event', new_event_path(:logbook_id => @logbook.id))
-
-%p= link_to "json", logbook_path(@logbook, :format=>:json)
-
-%p= link_to 'Edit', edit_logbook_path(@logbook)
-
-%p= link_to 'Back', logbooks_path
+= link_to 'New Event', new_event_path

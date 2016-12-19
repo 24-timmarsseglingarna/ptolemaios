@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Logbook:
+  = @event.logbook.name
+%p
+  %b Time:
+  = @event.time
+%p
+  %b Point:
+  = @event.point
+%p
+  %b Lanterns:
+  = @event.lanterns
+%p
+  %b Engine:
+  = @event.engine
+%p
+  %b Other:
+  = @event.other
+%p
+  %b Wind direction:
+  = @event.wind_direction
+%p
+  %b Wind speed:
+  = @event.wind_speed
+
+= link_to 'Edit', edit_event_path(@event)
+\|
+= link_to 'Back', events_path

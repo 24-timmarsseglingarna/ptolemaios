@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161218112017) do
+ActiveRecord::Schema.define(version: 20161218130533) do
+
+  create_table "events", force: :cascade do |t|
+    t.integer  "logbook_id"
+    t.datetime "time"
+    t.integer  "point"
+    t.boolean  "lanterns"
+    t.boolean  "engine"
+    t.string   "other"
+    t.string   "wind_direction"
+    t.integer  "wind_speed"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "logbooks", force: :cascade do |t|
     t.string   "boat_name"

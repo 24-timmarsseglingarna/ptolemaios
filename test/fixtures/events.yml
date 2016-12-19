@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  logbook_id: 1
+  time: 2016-12-18 13:05:33
+  point: 1
+  lanterns: false
+  engine: false
+  other: MyString
+  wind_direction: MyString
+  wind_speed: 1
+
+two:
+  logbook_id: 1
+  time: 2016-12-18 13:05:33
+  point: 1
+  lanterns: false
+  engine: false
+  other: MyString
+  wind_direction: MyString
+  wind_speed: 1
